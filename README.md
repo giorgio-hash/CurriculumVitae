@@ -1,1 +1,1 @@
-Il mio curriculum vitae, scritto in italiano.
+Il mio curriculum vitae.
