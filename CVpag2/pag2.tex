@@ -1,0 +1,118 @@
+\documentclass[a4paper]{letter}
+\usepackage{wallpaper}
+\usepackage{geometry}
+\usepackage{xcolor}
+\usepackage[T1]{fontenc}
+\usepackage[scaled]{helvet}
+\usepackage{fontawesome5}
+\usepackage{hyperref}
+\usepackage[none]{hyphenat}
+\usepackage{tikz}
+
+\renewcommand{\familydefault}{\sfdefault}
+
+
+\geometry{
+  a4paper, % Set paper size to A4
+  %total={210mm,297mm}, % A4 paper dimensions
+  left=20pt,
+  right=20pt,
+  top=0pt,
+  bottom=0pt,
+  nohead,
+  nofoot,
+  nomarginpar
+}
+
+\ThisCenterWallPaper{1.02}{../risorse/cvbg.jpg}
+
+\begin{document}
+
+\begin{minipage}[t]{0.30\textwidth}
+\setlength{\baselineskip}{1.5\baselineskip}
+\color{white}
+
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.65\textwidth}
+\setlength{\baselineskip}{1.4\baselineskip}
+
+\vspace{2 mm}
+{\large Progetti Triennale}
+\rule{\linewidth}{0.4pt}
+
+Focus sull'esplorazione dei linguaggi ed applicazione dei protocolli di rete.
+
+\vspace{2 mm}
+{\large \textbf{Proj\_GOLDUCK}}
+
+{\small Web-app per monitoraggio real-time di una gara di Orienteering, hosting su AWS. }
+
+\begin{itemize}
+    \item Back-end in Node.js attraverso moduli low-code Lambda di Amazon
+    \item Storage XML ed utilizzo di JSON per informazioni real-time relative all'evento
+    \item Front-end in Flutter con ricezione dati periodica in logica pull
+    \item Deployment su Amazon Web Service
+\end{itemize}
+\vspace{1 mm}
+
+{\large \textbf{Docker Escape}}
+
+{\small Tesi triennale dove vengono descritte vulnerabilità note di Docker e possibili mitigazioni. }
+
+\begin{itemize}
+    \item Creazione di un laboratorio di pentesting con macchine virtuali in rete dedicata
+    \item Approfondimento delle API di Docker ed interazione tramite curl e script
+    \item Approfondimento dei sistemi Linux e dei moduli Seccomp, SELinux, AppArmor
+    \item Produzione di script in Python3 (CPython) e C
+\end{itemize}
+\vspace{1 mm}
+
+\vspace{1 mm}
+{\large Progetti Magistrale}
+\rule{\linewidth}{0.4pt}
+
+Focus sul processo di realizzazione, testing e deployment di applicativi.
+
+\vspace{2 mm}
+{\large \textbf{ServeEasy}}
+
+{\small Sistema a microservizi per la gestione di una attività di ristorazione. }
+
+\vspace{1 mm}
+\begin{itemize}
+    \item Back-end e gateway in Spring Boot con integrazione dipendenze Maven
+    \item Deployment della rete in Docker Compose con monitoraggio "healthcheck"
+    \item Storage con MariaDB, gestione dati JSON tramite REST e Kafka Zookeeper, monitoraggio del flusso dati con Kafdrop e PHPMyAdmin
+    \item Repository multi-repo con CI/CD Github Actions per testing d'integrazione e container shipping dei microservizi verso DockerHub
+    \item Controllo qualità con PMD, SpotBugs, CheckStyle e sicurezza con SonarQube
+\end{itemize}
+
+\vspace{1 mm}
+{\large \textbf{Programmazione Genetica per search-based falsification testing}}
+
+{\small Applicazione di AI su modello cyber-fisico per falsificare le specifiche di un sistema automotive. }
+
+\vspace{1 mm}
+\begin{itemize}
+    \item Esplorazione del paradigma Genetic Programming ed analogie evolutive
+    \item Applicazione del framework "Hecate S-Taliro" e moduli MATLAB gaoptimset
+\end{itemize}
+
+\vspace{1 mm}
+{\large \textbf{Beemediate}}
+
+{\small Middleware di integrazione per mediare tra gestionali Odoo e SAP.}
+
+\vspace{1 mm}
+\begin{itemize}
+    \item Caso studio con protocollo FTP tra cliente e fornitore
+    \item Architettura esagonale, mapping tra XML-RPC Odoo ed XML-OpenTrans
+    \item DevSecOps con SonarQube Cloud Quality Check
+    \item Verifica formale della business logic tramite OpenJML 
+\end{itemize}
+
+\end{minipage}
+
+\end{document}

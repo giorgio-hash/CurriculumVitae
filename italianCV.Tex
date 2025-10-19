@@ -1,7 +1,10 @@
 \documentclass[a4paper]{letter}
+\usepackage[hidelinks]{hyperref}
 \usepackage{pdfpages}
+\includepdfset{link=true,pagecommand={}}
+\pagestyle{empty}
 
 \begin{document}
-\includepdf[pages=-]{CV pagina 1/pag1.pdf}
-\includepdf[pages=-]{CV pagina 2/pag2.pdf}
+\includepdf[pages=-]{CVpag1/pag1.pdf}
+\includepdf[pages=-]{CVpag2/pag2.pdf}
 \end{document}
