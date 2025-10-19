@@ -121,10 +121,24 @@
 Dottore in ingegneria informatica, specializzato nello sviluppo e verifica di sistemi in rete. Ho conoscenze in Big Data, AI, Machine Learning e passione per la sicurezza digitale, dalla privacy ed anonimizzazione dati alla sicurezza delle infrastrutture.
 
 
-\vspace{0.5cm}
+\vspace{0.15cm}
 
-{\large Formazione}
-\rule{\linewidth}{0.4pt}
+\makeatletter
+\newcommand{\FormazioneBox}{%
+    \begin{tikzpicture}[remember picture,overlay]
+        \coordinate (boxtop) at ($(current page.north west)+(20pt+0.5cm,-\dimexpr\pagetotal+1.5\baselineskip\relax)$);
+        \node[anchor=north west, draw={rgb,255:red,18;green,44;blue,71}, fill={rgb,255:red,18;green,44;blue,71}, text=white, rounded corners, inner sep=6pt, minimum width=\dimexpr\paperwidth-40pt-0.5cm\relax] at (boxtop) {%
+            \begin{minipage}[t]{\dimexpr\paperwidth-40pt-0.5cm-12pt\relax}%
+                {\large \color{white}Formazione}\color{white}\rule{\linewidth}{0.4pt}
+            \end{minipage}%
+        };
+    \end{tikzpicture}%
+}
+\makeatother
+
+\FormazioneBox
+
+\vspace{0.8 cm}
 
 {\large \textbf{Laurea Magistrale in Ingegneria Informatica}}
 
@@ -143,7 +157,7 @@ Dottore in ingegneria informatica, specializzato nello sviluppo e verifica di si
 \begin{itemize}
     \item Settembre 2019 - Settembre 2023.
 \item Formazione di base per l'ingegneria, \textbf{ingegneria del software} e \textbf{reti telcom}. 
-\item Tesi a tema \textbf{Offensive Security}: \href{https://github.com/giorgio-hash/tesi-triennio}{"Vulnerabilità di Fuga Da Docker"}
+\item Tesi a tema \textbf{Offensive Security}: \href{https://github.com/giorgio-hash/tesi-triennio}{"Vulnerabilità Di Fuga Da Docker"}
  \end{itemize}
 
 {\large \textbf{Diploma Tecnico Perito Informatico}}
@@ -151,13 +165,27 @@ Dottore in ingegneria informatica, specializzato nello sviluppo e verifica di si
 {\small Istituto Guglielmo Marconi, Gorgonzola (MI)}
 \begin{itemize}
     \item Settembre 2014 - Giugno 2019
-    \item basi di \textbf{gestione dati strutturati e non}, programmazione procedurale ed OOP, programmazione web, \textbf{infrastrutture web} sicure per servire contenuti.
+    \item Basi di \textbf{gestione dati strutturati e non}, programmazione procedurale ed OOP, programmazione web, \textbf{infrastrutture web sicure} per servire contenuti.
 \end{itemize}
 
-\vspace{0.5cm}
+\vspace{0.15cm}
 
-{\large Esperienza Lavorativa}
-\rule{\linewidth}{0.4pt}
+\makeatletter
+\newcommand{\EsperienzaBox}{%
+    \begin{tikzpicture}[remember picture,overlay]
+        \coordinate (boxtop) at ($(current page.north west)+(20pt+0.5cm,-\dimexpr\pagetotal+1.5\baselineskip\relax)$);
+        \node[anchor=north west, draw={rgb,255:red,18;green,44;blue,71}, fill={rgb,255:red,18;green,44;blue,71}, text=white, rounded corners, inner sep=6pt, minimum width=\dimexpr\paperwidth-40pt-0.5cm\relax] at (boxtop) {%
+            \begin{minipage}[t]{\dimexpr\paperwidth-40pt-0.5cm-12pt\relax}%
+                {\large \color{white}Esperienza Lavorativa}\color{white}\rule{\linewidth}{0.4pt}
+            \end{minipage}%
+        };
+    \end{tikzpicture}%
+}
+\makeatother
+
+\EsperienzaBox
+
+\vspace{0.8 cm}
 
 {\large \textbf{Programmatore Java, Scuola Lavoro}}
 
@@ -174,7 +202,7 @@ Dottore in ingegneria informatica, specializzato nello sviluppo e verifica di si
 
 \begin{itemize}
     \item 2020 - oggi
-    \item Aiuto i ragazzi delle superiori/università nello studio nel e loro orientamento.
+    \item Aiuto i ragazzi delle superiori/università nello studio e nel loro orientamento.
 \end{itemize}
 
 \end{minipage}

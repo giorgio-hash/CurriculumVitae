@@ -39,8 +39,23 @@
 \setlength{\baselineskip}{1.4\baselineskip}
 
 \vspace{2 mm}
-{\large Progetti Triennale}
-\rule{\linewidth}{0.4pt}
+
+\makeatletter
+\newcommand{\ProgettiTriennaleBox}{%
+    \begin{tikzpicture}[remember picture,overlay]
+        \coordinate (boxtop) at ($(current page.north west)+(20pt+0.5cm,-\dimexpr\pagetotal+1.5\baselineskip\relax)$);
+        \node[anchor=north west, draw={rgb,255:red,18;green,44;blue,71}, fill={rgb,255:red,18;green,44;blue,71}, text=white, rounded corners, inner sep=6pt, minimum width=\dimexpr\paperwidth-40pt-0.5cm\relax] at (boxtop) {%
+            \begin{minipage}[t]{\dimexpr\paperwidth-40pt-0.5cm-12pt\relax}%
+                {\large \color{white}Progetti Triennale}\color{white}\rule{\linewidth}{0.4pt}
+            \end{minipage}%
+        };
+    \end{tikzpicture}%
+}
+\makeatother
+
+\ProgettiTriennaleBox
+
+\vspace{0.8 cm}
 
 Focus sull'esplorazione dei linguaggi ed applicazione dei protocolli di rete.
 
@@ -69,9 +84,24 @@ Focus sull'esplorazione dei linguaggi ed applicazione dei protocolli di rete.
 \end{itemize}
 \vspace{1 mm}
 
-\vspace{1 mm}
-{\large Progetti Magistrale}
-\rule{\linewidth}{0.4pt}
+\vspace{0.15 cm}
+
+\makeatletter
+\newcommand{\ProgettiMagistraleBox}{%
+    \begin{tikzpicture}[remember picture,overlay]
+        \coordinate (boxtop) at ($(current page.north west)+(20pt+0.5cm,-\dimexpr\pagetotal+1.5\baselineskip\relax)$);
+        \node[anchor=north west, draw={rgb,255:red,18;green,44;blue,71}, fill={rgb,255:red,18;green,44;blue,71}, text=white, rounded corners, inner sep=6pt, minimum width=\dimexpr\paperwidth-40pt-0.5cm\relax] at (boxtop) {%
+            \begin{minipage}[t]{\dimexpr\paperwidth-40pt-0.5cm-12pt\relax}%
+                {\large \color{white}Progetti Magistrale}\color{white}\rule{\linewidth}{0.4pt}
+            \end{minipage}%
+        };
+    \end{tikzpicture}%
+}
+\makeatother
+
+\ProgettiMagistraleBox
+
+\vspace{0.8 cm}
 
 Focus sul processo di realizzazione, testing e deployment di applicativi.
 
@@ -103,14 +133,14 @@ Focus sul processo di realizzazione, testing e deployment di applicativi.
 \vspace{1 mm}
 {\large \textbf{Beemediate}}
 
-{\small Middleware di integrazione per mediare tra gestionali Odoo e SAP.}
+{\small Caso studio in azienda. Middleware di integrazione per ordini tra cliente Odoo e fornitore SAP.}
 
 \vspace{1 mm}
 \begin{itemize}
-    \item Caso studio con protocollo FTP tra cliente e fornitore
-    \item Architettura esagonale, mapping tra XML-RPC Odoo ed XML-OpenTrans
-    \item DevSecOps con SonarQube Cloud Quality Check
-    \item Verifica formale della business logic tramite OpenJML 
+    \item Progetto individuale
+    \item Contatto col cliente per raccolta, elaborazione e verifica delle specifiche
+    \item Verifica formale della business logic
+    \item DevSecOps con SonarQube Cloud Quality Check e Snyk
 \end{itemize}
 
 \end{minipage}
